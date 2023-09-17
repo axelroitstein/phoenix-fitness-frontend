@@ -5,7 +5,7 @@ import * as React from 'react';
 import MediaCard from "./card";
 import styles from '../../page.module.css'
 import ButtonAppBar from "./header";
-import Footer from "./footer";
+import PlanCard from "../users/user-plans";
 
 export default function LandingView() {
   return (
@@ -43,7 +43,9 @@ export default function LandingView() {
     <source src='/Gym video.mp4' type="video/mp4"/>       
     </video>
     </Box>
-    <Footer />
+
+    <Typography variant='h2'> Que estás esperando? Tu transformación comienza ahora!</Typography>
+    <PlanCard/>
     </Container>
   );
 }
