@@ -6,19 +6,26 @@ import MediaCard from "./card";
 import styles from '../../page.module.css'
 import ButtonAppBar from "./header";
 import PlanCard from "../users/user-plans";
-
+import Link from "next/link";
 export default function LandingView() {
   return (
-    <Container
-    
-      sx={{ bgcolor: "#fafafa", border:'2px solid black' }}
+    <Container sx={{ background: 'linear-gradient(180deg, #181818, #ff4500)' , color:'#fafafa'}}
     >
       <ButtonAppBar/>
-      <Typography variant='h2' component={'h1'}>Bienvenido/a a Phoenix Fitness</Typography>
-      <Typography variant='h4' >Si ya estás asociado a nuestros gimnasios:</Typography>
-      <Button variant="contained" color='success' > Iniciá sesión </Button> o si todavía no lo hiciste: <Button variant ='contained' color='warning' > Asociate </Button>
+      <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:"column", p:1, m:1}}>
+      
+      <Typography variant='h2' component={'h1'} sx={{m:2}}>Bienvenido/a a Phoenix Fitness</Typography>
+      <Typography variant='h4'sx={{m:2} }>Si ya estás asociado a nuestros gimnasios:</Typography>
+      <Link href='../../login'>
+      <Button variant="contained"  size='large' sx={{m:2, bgcolor:'#181818'}}> Iniciá sesión </Button>
+      </Link>
+      <Typography variant='h4'sx={{m:2, color:'#ffd700'} }>O si todavía no lo hiciste: </Typography> 
+      <Link href='../../register'>
+      <Button variant ='contained' color='warning' size='large' sx={{m:2}} > Asociate </Button>
+      </Link>
       <br />
-      <Typography>
+      
+      <Typography sx={{fontWeight: 600}}>
         En nuestro gimnasio, nos enorgullece ser un lugar de transformación y
         bienestar para nuestra comunidad. Nuestro objetivo es proporcionar un
         entorno acogedor y motivador donde las personas de todas las edades y
@@ -31,20 +38,23 @@ export default function LandingView() {
         motivación para que te sientas inspirado a mantener un estilo de vida
         saludable a largo plazo.
       </Typography>
-        
-      <Box sx={{ width: 100, border: "3px solid orange", m: 3, p: 4 }}>
+      
+
+      </Box>
+  
+      {/* <Box sx={{ width: 100, border: "3px solid orange", m: 3, p: 4 }}>
         <Typography>Esto es una box</Typography>
-        </Box>
+        </Box> */}
     
     
       <MediaCard/>
-    <Box sx={{border: '3px solid orange'}}>
+    {/* <Box sx={{border: '3px solid orange'}}>
       <video autoplay muted loop className={styles.video}>         
     <source src='/Gym video.mp4' type="video/mp4"/>       
     </video>
-    </Box>
+    </Box> */}
 
-    <Typography variant='h2'> Que estás esperando? Tu transformación comienza ahora!</Typography>
+    <Typography variant='h2'sx={{textAlign:'center'}}> Que estás esperando? Tu transformación comienza ahora!</Typography>
     <PlanCard/>
     </Container>
   );

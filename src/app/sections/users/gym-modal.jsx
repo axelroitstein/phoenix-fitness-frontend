@@ -25,7 +25,7 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Modificar datos</Button>
+      <Button onClick={handleOpen} sx={{color:'#fafafa',border:'2px solid white', m:3}}>Modificar datos</Button>
       <Modal
         open={open}
         onClose={handleClose}

@@ -1,4 +1,4 @@
-
+import { Box } from '@mui/material';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -6,17 +6,22 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material';
 
-export default function MediaCard(props) {
+
+export default function MediaCard() {
   return (
     <>
+    <Box sx={{ display: 'flex',
+          justifyContent: 'space-around',
+          p: 1,
+          m: 1,}}>
+
 
     <Card sx={{ maxWidth: 345, bgcolor:'#181818', color:'#fafafa' }}>
       <CardMedia
         sx={{ height: 140 }}
         image="https://i.ibb.co/M9q39NV/People-at-the-gym.webp"
-        title="green iguana"
+        title="Clases grupales"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -32,7 +37,7 @@ export default function MediaCard(props) {
       <CardMedia
         sx={{ height: 140 }}
         image="https://i.ibb.co/FxH3LD0/Gym-structure-1080x675.jpg"
-        title="green iguana"
+        title="Instalaciones del gimnasio"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -48,7 +53,7 @@ export default function MediaCard(props) {
       <CardMedia
         sx={{ height: 140 }}
         image="https://i.ibb.co/pWpsNcp/people-sitting-on-floor-in-gymnasium-eating-salads-royalty-free-image-758281093-1550159353.webp"
-        title="green iguana"
+        title="Gente haciendo dieta"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -59,6 +64,7 @@ export default function MediaCard(props) {
         </Typography>
       </CardContent>
     </Card>
+    </Box>
     
     
     </>

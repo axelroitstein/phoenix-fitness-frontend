@@ -4,3 +4,7 @@
     height: 25%;
    
 }
+
+.nodiscs{
+    list-style-type: none;
+}

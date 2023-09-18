@@ -10,9 +10,12 @@ export default function RoutineDietCard() {
   return (
     <>
     
-    <Box sx={{width:250}}>
+    <Box sx={{display: 'flex',
+          justifyContent: 'space-around',
+          p: 1,
+          m: 1}}>
     
-    <Card sx={{bgcolor:'#181818', color:'#fafafa'}}>
+    <Card sx={{bgcolor:'#181818', color:'#fafafa',m:2, p:5, border:'2px solid white'}}>
       <CardContent>
         <Typography variant = 'h2' component={'h1'} color="#fafafa" gutterBottom>
           Día 1
@@ -32,8 +35,8 @@ export default function RoutineDietCard() {
         </CardContent>
      
     </Card>
-
-    <Card sx={{ bgcolor:'#181818', color:'#fafafa' }}>
+    
+    <Card sx={{ bgcolor:'#181818', color:'#fafafa', m:2, p:5, border:'2px solid white'}}>
       <CardContent>
         <Typography variant='h2' component={'h1'} color="#fafafa" gutterBottom>
           Día 2
