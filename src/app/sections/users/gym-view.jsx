@@ -14,14 +14,14 @@ export default function GymView(){
         </Typography>
         
         <Paper sx={{bgcolor: '#181818', color:'#fafafa'}}>
-            <Typography variant='h4'> CLIENTES</Typography>
+            <Typography variant='h4'> CLIENTES </Typography>
             <Image src='https://i.ibb.co/SyzTQmq/gym-client.png' width={300} height={150} alt='Gym facilites' ></Image>
             <Typography variant='body1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis delectus aspernatur ab incidunt minima eos, libero, modi laudantium beatae necessitatibus unde voluptates suscipit tempora! Maxime voluptatem dicta illum consequuntur!.</Typography>
             <BasicModal/>
         </Paper>
         <br />
         <Paper sx={{bgcolor: '#181818', color:'#fafafa'}}>
-            <Typography variant='h4'> INGRESOS</Typography>
+            <Typography variant='h4'> INGRESOS </Typography>
             <Image src='https://i.ibb.co/xzjwq6p/Fitness-money-icon.webp' width={300} height={150} alt='Gym facilites' ></Image>
             <Typography variant='body1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis delectus aspernatur ab incidunt minima eos, libero, modi laudantium beatae necessitatibus unde voluptates suscipit tempora! Maxime voluptatem dicta illum consequuntur!</Typography>
         </Paper>

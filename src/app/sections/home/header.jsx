@@ -5,7 +5,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-
+import { Bebas_Neue } from 'next/font/google';
+import Link from 'next/link';
+const bebasNeue = Bebas_Neue({ subsets: ['latin'], weight: "400" })
 
 export default function ButtonAppBar() {
   return (
@@ -21,16 +23,27 @@ export default function ButtonAppBar() {
           >
             
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1,mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: bebasNeue,
+              letterSpacing: '.3rem',
+              color: '#ff4500',
+              textDecoration: 'none', }}>
             PHOENIX FITNESS
           </Typography>
-
+            
+            
           <Typography variant="body1" component="div" sx={{ flexGrow: 1 }}>
-            Quiénes Somos
+            <Link href='#' style={{textDecoration:'none', color:'#ffd700'}}>
+              Quiénes Somos
+            </Link>
           </Typography>
+            
 
-          <Typography variant="body1" component="div" sx={{ flexGrow: 1 }}>
-            Horarios
+          <Typography variant="body1" component="div" sx={{ flexGrow: 1}}>
+            <Link href='#' style={{textDecoration:'none', color:'#ffd700'}}>
+              Horarios
+            </Link>
           </Typography>
 
           <Button color="warning" variant='contained'>Asociate</Button>

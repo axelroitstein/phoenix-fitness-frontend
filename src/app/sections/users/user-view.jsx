@@ -3,14 +3,14 @@ import { Box, Container, Typography } from "@mui/material";
 import ButtonAppBar from "../home/header.jsx";
 import Paper from "@mui/material/Paper";
 import Image from "next/image";
-import PlanCard from "./user-plans.jsx";
+import ResponsiveAppBar from "./user-header.jsx";
 import RoutineDietCard from "./user-routines-diets.jsx";
 
 export default function UserView() {
   return (
     <>
       <ButtonAppBar />
-
+      <ResponsiveAppBar />
       <Container>
         <Typography variant="h2" component={"h1"}>
           Bienvenido [usuario], el cambio empieza ACÁ
